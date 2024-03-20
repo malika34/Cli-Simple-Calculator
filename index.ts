@@ -3,16 +3,16 @@ import inquirer from "inquirer";
 import chalk from "chalk";
 
 const answer = await inquirer.prompt([
-  { name: "number1", type: "number", message: "Enter Your First Number" },
+  { name: "number1", type: "number", message: "Enter your First Number" },
   {
     name: "number2",
     type: "number",
-    message: "Enter Your Second Number",
+    message: "Enter your Second Number",
   },
   {
     name: "operators",
     type: "list",
-    message: "Select Your Operators ",
+    message: "Select your Operators ",
     choices: [
       "Addition",
       "Subtraction",
@@ -38,3 +38,5 @@ if (answer.operators === "Addition") {
 } else {
   console.log(chalk.red("Plz type write code"));
 }
+
+console.log("THE END")
